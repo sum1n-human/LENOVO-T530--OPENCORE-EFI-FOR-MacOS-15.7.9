@@ -10,6 +10,7 @@ This repository contains the OpenCore EFI configuration files required to run **
 | **Processor (CPU)** | Intel Core 3rd Generation (Ivy Bridge - Core i5-3380M) |
 | **Chipset** | Intel QM77 Express Mobile PCH |
 | **Graphics (GPU)** | Intel HD Graphics 4000 *(Requires OCLP-X root patching)* |
+| **Graphics (GPU)** | Nvidia NVS 5400 M (Do not need to disable in bios just set OS detection to disable)*|
 | **Wi-Fi Chip** | Intel Centrino Ultimate-N 6300 
 | **Bluetooth** | Broadcom Bluetooth 4.0 module
 | **LAN (Ethernet)** | Intel 82579LM Gigabit Network Connection
