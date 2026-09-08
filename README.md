@@ -37,7 +37,7 @@ This repository contains the OpenCore EFI configuration files required to run **
 ## 🚀 Getting Started
 1. downgrade your bios to v 2.60, you need this version for 1vyrain to work.
 2. apply 1vyrain patch: Use 1vyrain image rev 5: https://github.com/n4ru/1vyrain and https://drive.google.com/file/d/1yusq98ja6NmI4G4txKVueFqY_ZEwaZvO/view
-    - use belrnaercher to flash ivyrain iso image into pendeive
+    - use belenaetcher to flash ivyrain iso image into pendeive
 4. **Bios Settings:** Ensure your BIOS is unlocked with 1virain because we need to disable intel MSR 0xE2 for CFG lock and we also need to adjust intel HD graphics properties inside Advance > System agent (SA) configuration > Graphics configuratopn.
       - GTT Size > 2 mb
       - Aperture Size > 512 mb
