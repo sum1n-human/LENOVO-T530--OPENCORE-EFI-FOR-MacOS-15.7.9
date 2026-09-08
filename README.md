@@ -35,11 +35,17 @@ This repository contains the OpenCore EFI configuration files required to run **
 * **Wi-Fi/Bluetooth:** Depends on your specific card; Broadcom or Intel cards will require matching kexts and OCLP root patching.
 
 ## 🚀 Getting Started
-1. **Bios Settings:** Ensure your BIOS is unlocked with 1virain. Set SATA Controller to `AHCI`, disable `Secure Boot`, and set Boot Mode to `UEFI Only or Both with CSM Enable or disable`.
-2. **Generate SMBIOS:** Before booting, use **GenSMBIOS** to generate a unique serial number, Board Serial, and UUID.
+1. **Bios Settings:** Ensure your BIOS is unlocked with 1virain because we need to disable intel MSR 0xE2 for CFG lock and we also need to adjust intel HD graphics properties inside Advance > System agent (SA) configuration > Graphics configuratopn.
+      - GTT Size > 2 mb
+      - Aperture Size > 512 mb
+      - DVMT Pre-Allocated > 128 mb
+      - DVMT Total Gfx Mem > MAX
+   
+3. .  Set SATA Controller to `AHCI`, disable `Secure Boot`, and set Boot Mode to `UEFI Only or Both with CSM Enable or disable`.
+4. **Generate SMBIOS:** Before booting, use **GenSMBIOS** to generate a unique serial number, Board Serial, and UUID.
      link: https://github.com/corpnewt/GenSMBIOS 
-4. **Installation:** Use a standard macOS Sequoia  vanilla installer, copy this EFI to your USB drive's EFI partition, and boot.
-5. **Post-Installation:** Download the latest version of **OpenCore Legacy Patcher-X** using this link "https://github.com/JeoJay127/OCLP-X/releases" to apply the necessary volume root patches for graphics and wireless networking.
+5. **Installation:** Use a standard macOS Sequoia  vanilla installer, copy this EFI to your USB drive's EFI partition, and boot.
+6. **Post-Installation:** Download the latest version of **OpenCore Legacy Patcher-X** using this link "https://github.com/JeoJay127/OCLP-X/releases" to apply the necessary volume root patches for graphics and wireless networking.
     (note: only use OCLP-X only if you have a intel wireless card otherwise use dortania version: https://github.com/dortania/OpenCore-Legacy-Patcher/releases)
 
 ## 🤝 Credits
