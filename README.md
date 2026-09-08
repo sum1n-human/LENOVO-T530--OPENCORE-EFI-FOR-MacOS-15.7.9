@@ -44,8 +44,8 @@ This repository contains the OpenCore EFI configuration files required to run **
       - DVMT Pre-Allocated > 128 mb
       - DVMT Total Gfx Mem > MAX
       - IGD Configuration >
-                         Connector type > eDP A
-                         bit rate > 24 bit
+                        - Connector type > eDP A
+                        - bit rate > 24 bit
       (note: if you unable to unlock bios then enable > AppleCpuPmCfgLock inside kernel > quirks)
 5.  Set SATA Controller to `AHCI`, disable `Secure Boot, Security Chip`, and set Boot Mode to `UEFI Only or Both with CSM Enable or disable`.
 6. **Generate SMBIOS:** Before booting, use **GenSMBIOS** to generate a unique serial number, Board Serial, and UUID.
